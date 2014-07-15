@@ -1,7 +1,7 @@
 ﻿(function () {
     $(window).on('DOMContentLoaded load resize scroll', function () {
-        var $elements = $(':inView');
+        //var $elements = $(':inView');
 
-        console.log($elements.length);
+        //console.log($elements.length);
     });
 })();

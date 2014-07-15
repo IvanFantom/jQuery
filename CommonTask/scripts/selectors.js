@@ -1,6 +1,6 @@
 ﻿(function () {
     $.extend($.expr[':'], {
-        inView: function(element) {
+        inView: function (element) {
             if (element instanceof jQuery) {
                 element = element[0];
             }
