@@ -17,10 +17,10 @@
             offset.right = offset.left + $element.outerWidth();
             offset.bottom = offset.top + $element.outerHeight();
 
-            return (viewport.right > offset.left &&
-                viewport.left < offset.right &&
-                viewport.bottom > offset.top &&
-                viewport.top < offset.bottom);
+            return viewport.right >= offset.left &&
+                viewport.left <= offset.right &&
+                viewport.bottom >= offset.top &&
+                viewport.top <= offset.bottom;
         }
     });
 })();

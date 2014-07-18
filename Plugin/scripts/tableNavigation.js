@@ -16,19 +16,19 @@
             var newY = oldY;
 
             switch (e.which) {
-                case 37:
+                case 37:                //left arrow
                     newX = oldX - 1;
                     break;
-                case 38:
+                case 38:                //up arrow
                     newY = oldY - 1;
                     break;
-                case 39:
+                case 39:                //right arrow
                     newX = oldX + 1;
                     break;
-                case 40:
+                case 40:                //down arrow
                     newY = oldY + 1;
                     break;
-                default:
+                default:                //another key pressed
                     return;
             }
 
@@ -58,7 +58,6 @@
                 .length - 1;
             rowIndex = 0;
 
-            $inputs.off('keydown.tablenavigation click.tablenavigation');
             $inputs.each(function () {
                 $(this).on('click.tablenavigation', { context: this }, _clickCellHandler);
 
